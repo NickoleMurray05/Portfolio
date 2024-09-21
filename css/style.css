@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0e8c8c 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Hero Section */
+#hero {
+    min-height: 400px;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #17ca20;
+}
+
+#hero h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 20px;
+}
+
+/* Skills Section */
+#skills {
+    padding: 15px;
+    color: #ffffff;
+    background: #0e8c8c;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Word Cloud */
+.word-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.word {
+    margin: 10px;
+    font-size: 20px;
+    color: #fff;
+    animation: float 3s ease-in-out infinite;
+}
+
+.word:nth-child(even) {
+    animation-delay: 1s;
+}
+
+.word:nth-child(odd) {
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Projects Section */
+#projects {
+    margin-top: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #0e8c8c;
+    text-align: center;
+}
